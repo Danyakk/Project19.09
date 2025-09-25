@@ -5,6 +5,7 @@ using namespace std;
 
 int main() 
 {
+	Products::PrintCount();
 	Products a("Laptop", "Electronics", 999.99, 2.5);
 	a.Print();
 	a.Init("Tablet", "Electronics", 499.99, 1.0);
@@ -22,4 +23,5 @@ int main()
 	a.SetWeight(0.3);
 	a.GetWeight();
 	a.Print();
+	Products::PrintCount();
 }

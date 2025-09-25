@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 using namespace std;
 class Products
 {
@@ -7,6 +8,7 @@ class Products
 	string category;
 	double price;
 	double weight;
+	static int count;
 public:
 	Products();
 	Products(string n, string cat, double pr, double w);
@@ -49,6 +51,8 @@ public:
 	{
 		return weight;
 	}
+
+	static void PrintCount();
 
 };
 
